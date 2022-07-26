@@ -21,10 +21,10 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
         KC_GRV,    KC_Q,    KC_W,    KC_E,   KC_R,   KC_T,   KC_TAB,
         KC_PGUP,   KC_A,    KC_S,    KC_D,   KC_F,   KC_G,   KC_ESC,
         KC_PGDN,   KC_Z,    KC_X,    KC_C,   KC_V,   KC_B,
-        KC_APP,    KC_INS,  KC_LGUI, KC_LCTL,
+        KC_APP,    KC_INS,  KC_LGUI, KC_LALT,
             TT(_NUMPAD),  // bot left
-            TT(_FN),      // top left
-            KC_LCTL,      // mid bot
+            KC_LCTL,      // top left
+            TT(_FN),      // mid bot
             KC_SPC,       // mid top
             KC_LSFT,      // bot right 
             KC_LALT,      // top right
@@ -33,18 +33,18 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
                           KC_ENT,  KC_Y,    KC_U,    KC_I,     KC_O,     KC_P,     KC_EQL,
                           KC_RGUI, KC_H,    KC_J,    KC_K,     KC_L,     KC_SCLN,  KC_QUOT,
                                    KC_N,    KC_M,    KC_COMM,  KC_DOT,   KC_SLSH,  KC_MINS,
-                                            KC_RCTL, KC_RGUI,  KC_HOME,  KC_END,
-            TT(_FN),      // top right
+                                            KC_RALT, KC_RGUI,  KC_HOME,  KC_END,
+            KC_RCTL,      // top right
             TT(_NUMPAD),  // bot right
             KC_BSPC,      // mid top
-            KC_RCTL,      // mid bot
+            TT(_FN),      // mid bot
             KC_RALT,      // left top
             KC_RSFT       // left bot
     ),
 
     [_FN] = LAYOUT_5x7(
         // left hand
-        KC_VOLU,   KC_F1,     KC_F2,      KC_F3,    KC_F4,     KC_F5,    _______,
+        KC_VOLU,   KC_F1,     KC_F2,      KC_F3,    KC_F4,     KC_F5,    KC_APP,
         KC_VOLD,   _______,   _______,    KC_UP,    _______,   _______,  _______,
         KC_MPLY,   _______,   KC_LEFT,    KC_DOWN,  KC_RGHT,   _______,  _______,
         KC_MNXT,   _______,   _______,    _______,  _______,   _______,
@@ -60,7 +60,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
                           KC_HOME,   KC_PGUP,   KC_LCBR,   KC_RCBR,   KC_LBRC,   KC_RBRC,   KC_F12,
                           _______,   KC_LEFT,   KC_DOWN,   KC_UP,     KC_RGHT,   KC_INS,    KC_SYRQ,
                                      KC_PGDN,   KC_END,    KC_PAUS,   KC_SCRL,   KC_BSLS,   KC_PIPE,
-                                                           _______,   _______,   _______,   _______,
+                                                           _______,   _______,   _______,   KC_PSCR,
                                     _______,
                                     _______,
                                     KC_DEL,
