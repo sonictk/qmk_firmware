@@ -23,8 +23,8 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
         KC_PGDN,   KC_Z,    KC_X,    KC_C,   KC_V,   KC_B,
         KC_APP,    KC_INS,  KC_LGUI, KC_LALT,
             TT(_NUMPAD),  // bot left
-            KC_LCTL,      // top left
-            TT(_FN),      // mid bot
+            TT(_FN),      // top left
+            KC_LCTL,      // mid bot
             KC_SPC,       // mid top
             KC_LSFT,      // bot right 
             KC_LALT,      // top right
@@ -34,10 +34,10 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
                           KC_RGUI, KC_H,    KC_J,    KC_K,     KC_L,     KC_SCLN,  KC_QUOT,
                                    KC_N,    KC_M,    KC_COMM,  KC_DOT,   KC_SLSH,  KC_MINS,
                                             KC_RALT, KC_RGUI,  KC_HOME,  KC_END,
-            KC_RCTL,      // top right
+            TT(_FN),      // top right
             TT(_NUMPAD),  // bot right
             KC_BSPC,      // mid top
-            TT(_FN),      // mid bot
+            KC_RCTL,      // mid bot
             KC_RALT,      // left top
             KC_RSFT       // left bot
     ),
