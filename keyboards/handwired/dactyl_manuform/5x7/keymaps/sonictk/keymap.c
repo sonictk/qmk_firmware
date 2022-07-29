@@ -47,7 +47,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
         KC_VOLU,   KC_F1,     KC_F2,      KC_F3,    KC_F4,     KC_F5,    KC_APP,
         KC_VOLD,   _______,   _______,    KC_UP,    _______,   _______,  _______,
         KC_MPLY,   _______,   KC_LEFT,    KC_DOWN,  KC_RGHT,   _______,  _______,
-        KC_MNXT,   _______,   _______,    _______,  _______,   _______,
+        KC_MNXT,   KC_MUTE,   _______,    _______,  _______,   _______,
         KC_MPRV,   KC_MSTP,   _______,    _______,
                                     _______,
                                     _______,
@@ -56,7 +56,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
                                     _______,
                                     _______,
         // right hand
-                          KC_NUM,    KC_F6,     KC_F7,     KC_F8,     KC_F9,     KC_F10,    KC_F11,
+                          CAPSWRD,   KC_F6,     KC_F7,     KC_F8,     KC_F9,     KC_F10,    KC_F11,
                           KC_HOME,   KC_PGUP,   KC_LCBR,   KC_RCBR,   KC_LBRC,   KC_RBRC,   KC_F12,
                           _______,   KC_LEFT,   KC_DOWN,   KC_UP,     KC_RGHT,   KC_INS,    KC_SYRQ,
                                      KC_PGDN,   KC_END,    KC_PAUS,   KC_SCRL,   KC_BSLS,   KC_PIPE,
@@ -71,20 +71,20 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 
     [_NUMPAD] = LAYOUT_5x7(
         // left hand
-        QK_BOOT,   _______,   _______,   _______,   _______,   _______,  _______,
-        QK_RBT,   _______,   _______,    KC_MS_U,   _______,   _______,  _______,
+        _______,   _______,   KC_ACL0,   KC_ACL1,   KC_ACL2,   _______,  _______,
+        _______,   _______,   _______,   KC_MS_U,   _______,   _______,  _______,
         _______,   _______,   KC_MS_L,   KC_MS_D,   KC_MS_R,   _______,  _______,
         _______,   _______,   _______,   _______,   _______,   _______,
-        _______,   _______,   _______,   _______,
+        QK_BOOT,   QK_RBT,    _______,   _______,
                                     _______, _______,
                                     _______, _______,
                                     _______, _______,
         // right hand
-                          KC_BTN3,   _______,   KC_NLCK,   KC_PSLS,   KC_PAST,   KC_PMNS,   _______,
-                          KC_BTN1,   _______,   KC_P7,     KC_P8,     KC_P9,     KC_PPLS,   _______,
-                          KC_BTN2,   _______,   KC_P4,     KC_P5,     KC_P6,     KC_PPLS,   _______,
-                                     _______,   KC_P1,     KC_P2,     KC_P3,     KC_PENT,   _______,
-                                                           KC_P0,     KC_PDOT,   KC_PENT,   _______,
+                          KC_BTN3,   KC_WH_U,   KC_NUM,    KC_PSLS,   KC_PAST,   KC_PMNS,   DM_REC1,
+                          KC_BTN1,   KC_WH_D,   KC_P7,     KC_P8,     KC_P9,     KC_PPLS,   DM_PLY1,
+                          KC_BTN2,   _______,   KC_P4,     KC_P5,     KC_P6,     KC_PPLS,   DM_REC2,
+                                     _______,   KC_P1,     KC_P2,     KC_P3,     KC_PENT,   DM_PLY2,
+                                                           KC_P0,     KC_PDOT,   KC_PENT,   DM_RSTP,
              _______, _______, _______,
              _______, _______, _______
     ),
