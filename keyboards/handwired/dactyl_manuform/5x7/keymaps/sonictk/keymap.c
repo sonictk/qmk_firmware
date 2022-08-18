@@ -6,7 +6,8 @@
 // entirely and just use numbers.
 #define _QWERTY 0
 #define _FN     1
-#define _NUMPAD 2
+#define _FN2    2
+#define _NUMPAD 3
 
 // Some basic macros
 #define TASK   LCTL(LSFT(KC_ESC))
@@ -17,11 +18,11 @@
 const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     [_QWERTY] = LAYOUT_5x7(
         // left hand
-        KC_ESC,    KC_1,    KC_2,    KC_3,   KC_4,   KC_5,   KC_LGUI,
-        KC_GRV,    KC_Q,    KC_W,    KC_E,   KC_R,   KC_T,   KC_TAB,
+        QK_GESC,   KC_1,    KC_2,    KC_3,   KC_4,   KC_5,   KC_LGUI,
+        KC_LSFT,   KC_Q,    KC_W,    KC_E,   KC_R,   KC_T,   KC_TAB,
         KC_PGUP,   KC_A,    KC_S,    KC_D,   KC_F,   KC_G,   KC_ESC,
         KC_PGDN,   KC_Z,    KC_X,    KC_C,   KC_V,   KC_B,
-        KC_APP,    KC_INS,  KC_LGUI, KC_LALT,
+        KC_APP,    KC_INS,  KC_LGUI, KC_LCTL,
             TT(_NUMPAD),  // bot left
             TT(_FN),      // top left
             KC_LCTL,      // mid bot
@@ -29,11 +30,11 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
             KC_LSFT,      // bot right 
             KC_LALT,      // top right
         // right hand
-                          KC_CAPS, KC_6,    KC_7,    KC_8,     KC_9,     KC_0,     KC_FIND,
+                          KC_CAPS, KC_6,    KC_7,    KC_8,     KC_9,     KC_0,     TT(_FN2),
                           KC_ENT,  KC_Y,    KC_U,    KC_I,     KC_O,     KC_P,     KC_EQL,
                           KC_GRV,  KC_H,    KC_J,    KC_K,     KC_L,     KC_SCLN,  KC_QUOT,
                                    KC_N,    KC_M,    KC_COMM,  KC_DOT,   KC_SLSH,  KC_MINS,
-                                            KC_RALT, KC_RGUI,  KC_HOME,  KC_END,
+                                            KC_RCTL, KC_RGUI,  KC_HOME,  KC_END,
             TT(_FN),      // top right
             TT(_NUMPAD),  // bot right
             KC_BSPC,      // mid top
@@ -69,6 +70,33 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
                                     _______
     ),
 
+    [_FN2] = LAYOUT_5x7(
+        // left hand
+        _______,   _______,   _______,    _______,  _______,   _______,  _______,
+        _______,   _______,   _______,    _______,  _______,   _______,  _______,
+        _______,   _______,   _______,    _______,  _______,   _______,  _______,
+        _______,   _______,   _______,    _______,
+        _______,   _______,   _______,    _______,  _______,   _______,
+                                    _______,
+                                    _______,
+                                    _______,
+                                    _______,
+                                    _______,
+                                    _______,
+        // right hand
+                          _______,   _______,   _______,   _______,   _______,   _______,   _______,
+                          _______,   _______,   _______,   _______,   _______,   _______,   _______,
+                          _______,   _______,   _______,   _______,   _______,   _______,   _______,
+                                     _______,   _______,   _______,   _______,   _______,   _______,
+                                                           _______,   _______,   _______,   _______,
+                                    _______,
+                                    _______,
+                                    _______,
+                                    _______,
+                                    _______,
+                                    _______
+    ),
+
     [_NUMPAD] = LAYOUT_5x7(
         // left hand
         _______,   _______,   KC_ACL0,   KC_ACL1,   KC_ACL2,   _______,  _______,
@@ -76,9 +104,12 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
         _______,   _______,   KC_MS_L,   KC_MS_D,   KC_MS_R,   _______,  _______,
         _______,   _______,   _______,   _______,   _______,   _______,
         QK_BOOT,   QK_RBT,    _______,   _______,
-                                    _______, _______,
-                                    _______, _______,
-                                    _______, _______,
+                                    _______,
+                                    _______,
+                                    _______,
+                                    _______,
+                                    _______,
+                                    _______,
         // right hand
                           KC_BTN3,   KC_WH_U,   KC_NUM,    KC_PSLS,   KC_PAST,   KC_PMNS,   DM_REC1,
                           KC_BTN1,   KC_WH_D,   KC_P7,     KC_P8,     KC_P9,     KC_PPLS,   DM_PLY1,

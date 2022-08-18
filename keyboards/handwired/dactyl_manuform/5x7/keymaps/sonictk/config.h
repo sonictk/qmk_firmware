@@ -23,3 +23,6 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 //#define MASTER_RIGHT
 
 //#define EE_HANDS
+
+// Allow for tapping toggle to activate with just 3 taps instead of 5.
+#define TAPPING_TOGGLE 3
