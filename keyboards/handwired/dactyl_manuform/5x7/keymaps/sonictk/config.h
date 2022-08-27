@@ -24,5 +24,8 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
 //#define EE_HANDS
 
-// Allow for tapping toggle to activate with just 3 taps instead of 5.
-#define TAPPING_TOGGLE 3
+// Allow for tapping toggle to activate with just 2 taps instead of 5.
+#define TAPPING_TOGGLE 2
+
+// A custom combo for activating secondary function layer by hitting FN1 + FNNum.
+#define COMBO_COUNT 1

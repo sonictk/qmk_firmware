@@ -15,3 +15,4 @@ SPLIT_KEYBOARD = yes
 # Custom options enabled for Dactyl Manuform 5x7
 CAPS_WORD_ENABLE = yes
 DYNAMIC_MACRO_ENABLE = yes
+COMBO_ENABLE = yes

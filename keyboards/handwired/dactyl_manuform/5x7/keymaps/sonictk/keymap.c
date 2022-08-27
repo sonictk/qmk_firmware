@@ -15,6 +15,13 @@
 #define TAB_L  LCTL(LSFT(KC_TAB))
 #define TAB_RO LCTL(LSFT(KC_T))
 
+// Key combos
+const uint16_t PROGMEM fn2_combo[] = {TT(_FN), TT(_NUMPAD), COMBO_END};
+
+combo_t key_combos[COMBO_COUNT] = {
+	COMBO(fn2_combo, MO(_FN2))
+};
+
 const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     [_QWERTY] = LAYOUT_5x7(
         // left hand
@@ -76,7 +83,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
         _______,   _______,   _______,    _______,  _______,   _______,  _______,
         _______,   _______,   _______,    _______,  _______,   _______,  _______,
         _______,   _______,   _______,    _______,
-        _______,   _______,   _______,    _______,  _______,   _______,
+        QK_BOOT,   QK_RBT,    _______,    _______,  _______,   _______,
                                     _______,
                                     _______,
                                     _______,
