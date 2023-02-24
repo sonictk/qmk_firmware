@@ -34,10 +34,10 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
             TT(_FN),      // top left
             KC_LCTL,      // mid bot
             KC_SPC,       // mid top
-            KC_LSFT,      // bot right 
+            KC_LSFT,      // bot right
             KC_LALT,      // top right
         // right hand
-                          KC_CAPS, KC_6,    KC_7,    KC_8,     KC_9,     KC_0,     TT(_FN2),
+                          CAPSWRD, KC_6,    KC_7,    KC_8,     KC_9,     KC_0,     TT(_FN2),
                           KC_ENT,  KC_Y,    KC_U,    KC_I,     KC_O,     KC_P,     KC_EQL,
                           KC_GRV,  KC_H,    KC_J,    KC_K,     KC_L,     KC_SCLN,  KC_QUOT,
                                    KC_N,    KC_M,    KC_COMM,  KC_DOT,   KC_SLSH,  KC_MINS,
@@ -64,7 +64,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
                                     _______,
                                     _______,
         // right hand
-                          CAPSWRD,   KC_F6,     KC_F7,     KC_F8,     KC_F9,     KC_F10,    KC_F11,
+                          KC_CAPS,   KC_F6,     KC_F7,     KC_F8,     KC_F9,     KC_F10,    KC_F11,
                           KC_HOME,   KC_PGUP,   KC_LCBR,   KC_RCBR,   KC_LBRC,   KC_RBRC,   KC_F12,
                           _______,   KC_LEFT,   KC_DOWN,   KC_UP,     KC_RGHT,   KC_INS,    KC_SYRQ,
                                      KC_PGDN,   KC_END,    KC_PAUS,   KC_SCRL,   KC_BSLS,   KC_PIPE,
